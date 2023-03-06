@@ -1,0 +1,30 @@
+{
+  "name": "blog-mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kseniyavldk/blog-mern.git"
+  },
+  "author": "kseniyavldk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kseniyavldk/blog-mern/issues"
+  },
+  "homepage": "https://github.com/kseniyavldk/blog-mern#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
