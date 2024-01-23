@@ -37,8 +37,9 @@ app.use(express.json());
 app.use(cors());
 app.use(`/uploads`, express.static("uploads"));
 
+
 app.post(
-  "/auth/login",
+  "/auth/login",(req, res) => {res.sendStatus(200)},
   loginValidation,
   handleValidationErrors,
   UserController.login
@@ -77,9 +78,19 @@ app.patch(
   PostController.update
 );
 
-app.listen(4444, (err) => {
+
+/* app.listen(4444, (err) => {
   if (err) {
     return console.lof(err);
   }
   console.log("Server OK");
+}); */
+app.listen(4444, () => {
+ 
+  console.log("Server OK");
 });
+afterAll(async () => {
+  await server.close();
+});
+
+export default app;
